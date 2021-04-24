@@ -2,8 +2,9 @@ import pytube
 import moviepy
 from moviepy import editor
 import os
+import sys
 
-link = "https://www.youtube.com/playlist?list=PLaP23oJapSUmi1AYLTIlq8L_AigHIie9F"
+link = sys.argv[1] if sys.argv[1] else "https://www.youtube.com/playlist?list=PLaP23oJapSUmi1AYLTIlq8L_AigHIie9F"
 p = pytube.Playlist(link)
 print(f'downloading : {p.title}')
 for i, video_url in enumerate(p.video_urls):
