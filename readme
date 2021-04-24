@@ -1,0 +1,5 @@
+run python -m venv venv
+then pip install pytube and moviepy
+
+afterwards, just run python main.py [URL to playlist only]
+only works on youtube playlists, newAudio tab will have the audio you have not downloaded yet, once you have downloaded the audio, put it in the audio folder so you don't get duplicate downloads. 
